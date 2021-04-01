@@ -1,0 +1,103 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>JavaScript Calculator Assignment</title>
+<style>
+ .h1
+  {
+    color:#000000; font-size:50px;
+  }
+ .hr
+  {
+    color:black;
+  }
+ .div
+  {
+    width:280px; 
+    padding-top:5px; 
+    padding-bottom:5px; 
+    background-color:#000000;
+  }
+ .ph
+  {
+    width:250px; 
+    height:60px; 
+    font-size:60px;  
+    text-align:right; 
+    border-radius:8px; 
+    margin:3px; 
+    padding-bottom:5px; 
+    background-color:#ACAEA1;
+  }
+ .per
+  {
+    width:60px; height:60px; font-size:30px; background-color:#A8A7A5; color:white; border-radius:8px; margin:3px;
+  }
+ .clr
+  {
+    width:60px; height:60px; font-size:30px; background-color:#EAD53D; color:white; border-radius:8px; margin:3px;
+  }
+ .Fr
+  {
+    width:60px; height:60px; font-size:30px; background-color:#636260; color:white; border-radius:8px; margin:3px;
+  }
+ .dv
+  {
+    width:60px; height:60px; font-size:30px; background-color:#A8A7A5; color:white; border-radius:8px; margin:3px;
+  }
+ .Sr
+  {
+    width:60px; height:60px; font-size:30px; background-color:#636260; color:white; border-radius:8px; margin:3px;
+  }
+ .Ml
+  {
+    width:60px; height:60px; font-size:30px; background-color:#A8A7A5; color:white; border-radius:8px; margin:3px;
+  }
+ .Tr
+  {
+    width:60px; height:60px; font-size:30px; background-color:#636260; color:white; border-radius:8px; margin:3px;
+  }
+  
+</style>
+
+	</head>
+
+
+<body>
+    <center>
+        <br>
+        <h1 class="h1">Simple JavaScript Calculator Assignment</h1>
+        <hr class="hr">
+        <form name="calculator">
+            <div class="div1">
+                <input placeholder="0" name="display" id="pnl" class="ph" disabled="disabled" />
+                <br/>
+                <input type="button" value="%" onclick="document.calculator.display.value +='%'" class="per" />
+                <input type="button" value="AC" onclick="document.calculator.display.value=''" class="clr" />
+                <br/>
+                <input type="button" value="7" onclick="document.calculator.display.value +='7'" class="Fr" />
+                <input type="button" value="8" onclick="document.calculator.display.value +='8'" class="Fr" />
+                <input type="button" value="9" onclick="document.calculator.display.value +='9'" class="Fr" />
+                <input type="button" value="/" onclick="document.calculator.display.value +='/'" class="dv" />
+                <br>
+                <input type="button" value="4" onclick="document.calculator.display.value +='4'" class="Sr" />
+                <input type="button" value="5" onclick="document.calculator.display.value +='5'" class="Sr" />
+                <input type="button" value="6" onclick="document.calculator.display.value +='6'" class="Sr" />
+                <input type="button" value="X" onclick="document.calculator.display.value +='*'" class="Ml" />
+                <br>
+                <input type="button" value="1" onclick="document.calculator.display.value +='1'" class="Tr" />
+                <input type="button" value="2" onclick="document.calculator.display.value +='2'" class="Tr" />
+                <input type="button" value="3" onclick="document.calculator.display.value +='3'" class="Tr" />
+                <input type="button" value="-" onclick="document.calculator.display.value +='-'" class="Ml" />
+                <br/>
+                <input type="button" value="0" onclick="document.calculator.display.value +='0'" class="Tr" />
+                <input type="button" value="." onclick="document.calculator.display.value +='.'" class="Ml" />
+                <input type="button" value="=" onclick="document.calculator.display.value = eval(document.calculator.display.value)" class="Ml" />
+                <input type="button" value="+" onclick="document.calculator.display.value +='+'" class="Ml" />
+            </div>
+        </form>
+    </center>
+</body>
+
+</html>
